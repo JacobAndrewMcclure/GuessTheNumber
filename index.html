@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS link-->
+    <link rel="stylesheet" href="style.css">
+    <!--Font links-->
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <title>Guess the number!</title>
+</head>
+<body>
+    <div id="userInputContainer">
+        <h1 id="headline">Guess the number!</h1>
+            
+        <!--User's previous guess's-->
+        <p id="previousGuesses">Guess a number between 1 & 100. You have 10 tries!</p>
+            
+        <!--User input field-->
+        <input type="text" id="userInput">
+            
+        <!--Enter button-->
+        <button type="button" id="submitBtn" onclick="checkGuess()">Submit</button>
+            
+        <!--system input field-->
+        <p id="systemResponse">---</p>
+            
+        <!--New game-->
+        <button id="newGame" onclick="resetGame()">Start Game!</button>
+    </div>
+    
+    <!--JS file-->
+    <script src="app.js"></script>
+</body>
+</html>
